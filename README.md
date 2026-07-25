@@ -2,23 +2,6 @@
 
 A comprehensive Spring Boot application for managing vehicle fleets with real-time telematics tracking, trip monitoring, fuel management, safety analytics, and maintenance scheduling.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [System Architecture](#system-architecture)
-- [Technology Stack](#technology-stack)
-- [Prerequisites](#prerequisites)
-- [Installation & Setup](#installation--setup)
-- [Configuration](#configuration)
-- [Database Schema](#database-schema)
-- [API Documentation](#api-documentation)
-- [User Roles & Permissions](#user-roles--permissions)
-- [Project Structure](#project-structure)
-- [Running the Application](#running-the-application)
-- [Key Components](#key-components)
-- [Development Guide](#development-guide)
-
 ## 🎯 Overview
 
 The Connected Vehicle Telematics Fleet Management System is an enterprise-grade solution for fleet operators to:
