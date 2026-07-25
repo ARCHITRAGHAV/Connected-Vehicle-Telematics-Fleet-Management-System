@@ -61,6 +61,24 @@ The Connected Vehicle Telematics Fleet Management System is an enterprise-grade 
 - Responsive web UI with Thymeleaf templates
 - RESTful API endpoints for third-party integration
 
+## 📸 Screenshots
+
+| Login | Admin Dashboard |
+|-------|-----------------|
+| ![](screenshots/login.png) | ![](screenshots/admin-dashboard.png) |
+
+| Fleet Manager | Driver Dashboard |
+|----------------|------------------|
+| ![](screenshots/fleet-dashboard.png) | ![](screenshots/driver-dashboard.png) |
+
+| Trip Dashboard | Fuel Dashboard |
+|----------------|----------------|
+| ![](screenshots/trip-dashboard.png) | ![](screenshots/fuel-dashboard.png) |
+
+| Safety Dashboard | Service Dashboard |
+|------------------|-------------------|
+| ![](screenshots/safety-dashboard.png) | ![](screenshots/service-dashboard.png) |
+
 ## 🏗️ System Architecture
 
 ```
