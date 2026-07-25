@@ -1,8 +1,42 @@
-# Connected Vehicle Telematics Fleet Management System (CVTMS)
+<div align="center">
 
-A comprehensive Spring Boot application for managing vehicle fleets with real-time telematics tracking, trip monitoring, fuel management, safety analytics, and maintenance scheduling.
+<img src="screenshots/login.png" alt="Connected Vehicle Telematics Fleet Management System Banner" width="100%" />
 
-## 🎯 Overview
+# Connected Vehicle Telematics Fleet Management System
+
+### Enterprise Fleet Monitoring & Telematics Solution
+
+*A Spring Boot application for real-time vehicle tracking, trip management, fuel monitoring, maintenance scheduling, and driver safety analytics.*
+
+![Java](https://img.shields.io/badge/Java-21-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.6-6DB33F)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1)
+![Hibernate](https://img.shields.io/badge/Hibernate-JPA-59666C)
+![Maven](https://img.shields.io/badge/Maven-3.8+-C71A36)
+
+</div>
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [System Architecture](#system-architecture)
+- [Technology Stack](#technology-stack)
+- [Prerequisites](#prerequisites)
+- [Installation & Setup](#installation--setup)
+- [Configuration](#configuration)
+- [Database Schema](#database-schema)
+- [API Documentation](#api-documentation)
+- [User Roles & Permissions](#user-roles--permissions)
+- [Project Structure](#project-structure)
+- [Running the Application](#running-the-application)
+- [Key Components](#key-components)
+- [Development Guide](#development-guide)
+- [Troubleshooting](#troubleshooting)
+- [Support](#support)
+
+## Overview
 
 The Connected Vehicle Telematics Fleet Management System is an enterprise-grade solution for fleet operators to:
 
@@ -13,7 +47,7 @@ The Connected Vehicle Telematics Fleet Management System is an enterprise-grade 
 - **Analyze Driver Behavior** with safety scores and performance metrics
 - **Generate Reports** for operational analytics and compliance
 
-## ✨ Features
+## Features
 
 ### Core Features
 
@@ -61,7 +95,7 @@ The Connected Vehicle Telematics Fleet Management System is an enterprise-grade 
 - Responsive web UI with Thymeleaf templates
 - RESTful API endpoints for third-party integration
 
-## 📸 Screenshots
+## Screenshots
 
 | Login | Admin Dashboard |
 |-------|-----------------|
@@ -79,7 +113,7 @@ The Connected Vehicle Telematics Fleet Management System is an enterprise-grade 
 |------------------|-------------------|
 | ![](screenshots/safety-dashboard.png) | ![](screenshots/service-dashboard.png) |
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -120,7 +154,7 @@ The Connected Vehicle Telematics Fleet Management System is an enterprise-grade 
 └─────────────────────────────────────────────────────────┘
 ```
 
-## 💻 Technology Stack
+## Technology Stack
 
 | Component | Technology | Version |
 |-----------|-----------|---------|
@@ -133,7 +167,7 @@ The Connected Vehicle Telematics Fleet Management System is an enterprise-grade 
 | **Build Tool** | Maven | 3.8+ |
 | **Utilities** | Lombok | 1.18+ |
 
-## 📦 Prerequisites
+## Prerequisites
 
 ### System Requirements
 - **Java Development Kit (JDK)** 21 or higher
@@ -146,13 +180,14 @@ The Connected Vehicle Telematics Fleet Management System is an enterprise-grade 
 - Eclipse IDE with Spring Tools
 - VS Code with Java Extensions
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/ARCHITRAGHAV/Connected-Vehicle-Telematics-Fleet-Management-System.git
-cd CVTMS
+
+cd Connected-Vehicle-Telematics-Fleet-Management-System
 ```
 
 ### Step 2: Configure MySQL Database
@@ -200,7 +235,7 @@ java -jar target/telematics-fleet-management-0.0.1-SNAPSHOT.jar
 
 - **Web UI**: http://localhost:8082
 
-## ⚙️ Configuration
+## Configuration
 
 ### Application Properties
 
@@ -240,7 +275,7 @@ spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
 - Role-based access control for endpoints
 - Custom success handler with role-based redirects
 
-## 📊 Database Schema
+## Database Schema
 
 ### Core Entities
 
@@ -325,7 +360,7 @@ braking_smoothness     DOUBLE (0-100)
 overall_score          DOUBLE (0-100)
 ```
 
-## 📡 API Documentation
+## API Documentation
 
 ### Authentication
 - **Login**: POST `/login` (Form-based)
@@ -373,7 +408,7 @@ GET    /api/safety/driver-scores  - Driver performance scores
 GET    /api/safety/incidents      - Safety incidents
 ```
 
-## 👥 User Roles & Permissions
+## User Roles & Permissions
 
 ### Role-Based Access Control Matrix
 
@@ -397,7 +432,7 @@ GET    /api/safety/incidents      - Safety incidents
 5. **Safety Officer**: Monitor safety metrics and driver behavior
 6. **Operations Analyst**: Analyze fuel efficiency and operational costs
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 CVTMS/
@@ -485,7 +520,7 @@ CVTMS/
 └── mvnw / mvnw.cmd                                  (Maven Wrapper)
 ```
 
-## ▶️ Running the Application
+## Running the Application
 
 ### Development Environment
 
@@ -521,7 +556,7 @@ CVTMS/
    - Enable SSL/HTTPS
    - Configure firewall and security
 
-## 🔑 Key Components
+## Key Components
 
 ### Service Layer
 
@@ -530,7 +565,7 @@ CVTMS/
 - User management operations
 
 **VehicleService**
-- Vehicle registration and registration
+- Vehicle registration and management
 - Status updates and tracking
 - Device IMEI management
 
@@ -565,7 +600,7 @@ CVTMS/
 - Used for testing and demonstrations
 - Can be disabled in production
 
-## 📝 Development Guide
+## Development Guide
 
 ### Adding a New Feature
 
@@ -615,7 +650,7 @@ logging.level.org.springframework=DEBUG
 logging.level.org.hibernate=DEBUG
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Database Connection Issues
 - Verify MySQL is running
@@ -631,22 +666,9 @@ logging.level.org.hibernate=DEBUG
 - Rebuild: `mvn install -DskipTests`
 - Check Java version: `java -version` (must be 21+)
 
-## 📄 License
-
-This project is part of the academic coursework. Refer to LICENSE file for details.
-
-## 👨‍💼 Contributors
-
-- **Archit Raghav** - Project Lead & Developer
-
-## 📧 Support
+## Support
 
 For issues, questions, or contributions, please:
 1. Check existing GitHub issues
 2. Create a new issue with detailed description
 3. Submit pull requests with improvements
-
----
-
-**Last Updated**: July 2026
-**Version**: 0.0.1-SNAPSHOT
